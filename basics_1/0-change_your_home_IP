@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cp /etc/hosts /etc/hosts.new
+echo "127.0.0.2  localhost"
+echo "8.8.8.8  facebook.com"
+cp -f /etc/hosts.new /etc/hosts
+sudo reboot
